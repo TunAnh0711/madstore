@@ -1,0 +1,72 @@
+# Netlify — chỉ phần giao diện tĩnh.
+#
+# Deploy ở chế độ DEMO UI:
+#   - Sản phẩm đọc từ app/data/catalog.json (sinh ra ở bước build).
+#   - Giỏ hàng + đơn hàng giả lập lưu localStorage.
+#   - KHÔNG có đăng nhập / ví / thanh toán thật (server/server.mjs không chạy trên Netlify).
+#
+# Muốn đầy đủ chức năng: dùng host chạy Node (Render / Railway / Fly.io / VPS).
+
+[build]
+  publish = "app"
+  command = "node tools/sync-catalog.mjs"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# --- URL sạch: /products → /products.html --------------------------------
+
+[[redirects]]
+  from = "/products"
+  to = "/products.html"
+  status = 200
+
+[[redirects]]
+  from = "/cart"
+  to = "/cart.html"
+  status = 200
+
+[[redirects]]
+  from = "/login"
+  to = "/login.html"
+  status = 200
+
+[[redirects]]
+  from = "/register"
+  to = "/register.html"
+  status = 200
+
+[[redirects]]
+  from = "/account"
+  to = "/account.html"
+  status = 200
+
+[[redirects]]
+  from = "/wallet"
+  to = "/wallet.html"
+  status = 200
+
+[[redirects]]
+  from = "/orders"
+  to = "/orders.html"
+  status = 200
+
+# --- Chi tiết sản phẩm: /products/<slug> → product.html -------------------
+# product.js đọc slug từ location.pathname nên vẫn hiển thị đúng.
+
+[[redirects]]
+  from = "/products/*"
+  to = "/product.html"
+  status = 200
+
+# --- Cache ---------------------------------------------------------------
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

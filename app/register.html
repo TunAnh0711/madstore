@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tạo tài khoản — MadStore</title>
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/theme.css">
+<link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<header data-header></header>
+
+<main class="auth-wrap">
+  <div class="auth-card">
+    <h1>Tạo tài khoản</h1>
+    <p class="auth-card__sub">Miễn phí. Chỉ cần email để bắt đầu mua hàng bằng ví.</p>
+
+    <form class="auth-form" data-auth-form data-mode="register" novalidate>
+      <div class="field">
+        <label for="name">Tên hiển thị</label>
+        <input class="input" id="name" name="name" type="text" autocomplete="nickname" placeholder="Nguyễn Văn A">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="ban@example.com" required>
+      </div>
+      <div class="field">
+        <label for="password">Mật khẩu</label>
+        <input class="input" id="password" name="password" type="password" autocomplete="new-password" placeholder="Tối thiểu 6 ký tự" required>
+      </div>
+      <div class="form-error" data-error></div>
+      <button class="btn btn--primary btn--lg btn--block" type="submit" data-submit>Tạo tài khoản</button>
+    </form>
+
+    <p class="auth-switch">Đã có tài khoản? <a href="/login">Đăng nhập</a></p>
+  </div>
+</main>
+
+<footer data-footer></footer>
+
+<script src="/assets/js/core.js"></script>
+<script src="/assets/js/auth.js"></script>
+</body>
+</html>

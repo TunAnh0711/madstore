@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chi tiết sản phẩm — MadStore</title>
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/theme.css">
+<link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<header data-header></header>
+
+<main class="page">
+  <div class="shell">
+    <nav class="breadcrumb" data-breadcrumb aria-label="Breadcrumb">
+      <a href="/">Trang chủ</a><span>/</span>
+      <a href="/products">Cửa hàng</a><span>/</span>
+      <span class="dim">Đang tải…</span>
+    </nav>
+
+    <div data-pdp>
+      <div class="pdp">
+        <div class="skeleton" style="aspect-ratio:4/3;border-radius:var(--radius-lg)"></div>
+        <div style="display:grid;gap:0.75rem">
+          <div class="skeleton" style="height:28px;width:60%"></div>
+          <div class="skeleton" style="height:44px;width:38%"></div>
+          <div class="skeleton" style="height:180px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="sticky-buy" data-sticky-buy>
+  <div style="min-width:0">
+    <div class="dim" style="font-size:.75rem">Tổng cộng</div>
+    <div style="font-family:var(--font-mono);font-size:1.1rem;font-weight:800" data-sticky-total>—</div>
+  </div>
+  <button class="btn btn--primary" data-add style="margin-left:auto">Thêm vào giỏ</button>
+</div>
+
+<footer data-footer></footer>
+
+<script src="/assets/js/core.js"></script>
+<script src="/assets/js/product.js"></script>
+</body>
+</html>

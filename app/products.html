@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sản phẩm — MadStore</title>
+<meta name="description" content="Toàn bộ sản phẩm: Discord, Netflix, Spotify, YouTube, Chat AI, Canva, CapCut, buff mạng xã hội và nạp game.">
+<meta name="theme-color" content="#fff5e4">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/theme.css">
+<link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<header data-header></header>
+
+<main class="page">
+  <div class="shell">
+    <div class="section-head" style="margin-bottom:16px">
+      <div>
+        <h1 class="section-head__title">Sản phẩm</h1>
+        <p class="section-head__sub">Giá công khai, ghi rõ từng gói. Đơn giao tự động có hàng ngay sau khi thanh toán.</p>
+      </div>
+    </div>
+
+    <div class="shop-toolbar">
+      <div class="chip-row" data-category-chips>
+        <button class="chip" data-category="" aria-pressed="true">Tất cả</button>
+        <button class="chip" data-category="Discord" aria-pressed="false">Discord</button>
+        <button class="chip" data-category="Netflix" aria-pressed="false">Netflix</button>
+        <button class="chip" data-category="Spotify" aria-pressed="false">Spotify</button>
+        <button class="chip" data-category="YouTube" aria-pressed="false">YouTube</button>
+        <button class="chip" data-category="Chat AI" aria-pressed="false">Chat AI</button>
+        <button class="chip" data-category="Canva" aria-pressed="false">Canva</button>
+        <button class="chip" data-category="CapCut" aria-pressed="false">CapCut</button>
+        <button class="chip" data-category="Buff mxh" aria-pressed="false">Buff mxh</button>
+        <button class="chip" data-category="Khác" aria-pressed="false">Dịch vụ khác</button>
+        <button class="chip" data-category="Game" aria-pressed="false">Nạp game</button>
+      </div>
+
+      <label class="search-field">
+        <span data-icon="search"></span>
+        <input class="input" type="search" placeholder="Tìm sản phẩm…" data-search aria-label="Tìm sản phẩm">
+      </label>
+
+      <select class="select" data-sort aria-label="Sắp xếp" style="max-width:180px">
+        <option value="">Mặc định</option>
+        <option value="popular">Bán chạy</option>
+        <option value="price-asc">Giá tăng dần</option>
+        <option value="price-desc">Giá giảm dần</option>
+      </select>
+    </div>
+
+    <div data-groups></div>
+
+    <div class="section--tight" data-empty hidden>
+      <div class="empty">
+        <strong data-empty-title>Không tìm thấy sản phẩm</strong>
+        <span data-empty-sub>Thử từ khoá khác, hoặc xoá bộ lọc.</span>
+        <button class="btn btn--ghost btn--sm" data-reset>Xoá bộ lọc</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer data-footer></footer>
+
+<script src="/assets/js/core.js"></script>
+<script src="/assets/js/products.js"></script>
+</body>
+</html>

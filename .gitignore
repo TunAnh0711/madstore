@@ -1,0 +1,14 @@
+# deps
+node_modules/
+
+# dữ liệu chạy (sinh ra từ db.seed.json ở lần chạy đầu)
+server/data/db.json
+server/data/db.json.tmp
+
+# bằng chứng reverse-engineer site gốc — không đưa lên repo công khai
+_capture/
+
+# hệ điều hành
+.DS_Store
+Thumbs.db
+*.log

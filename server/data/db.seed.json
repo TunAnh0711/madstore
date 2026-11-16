@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "0cdb9976-a5f9-4d3c-872f-b40f62426708",
+      "email": "demo@madstore.vn",
+      "name": "Khách MadStore",
+      "phone": null,
+      "password": "6e72b47db75c234d87f05e78026551bb:8805198744ef80aa18c4d20bbdb7ba512ad3a130c2e475bd0227edb087d4e95f58986a16d64fb37c346eff2b56ca86c457c559e0e8a57048485b51d3ab8f6d41",
+      "role": "customer",
+      "balance": 289500,
+      "points": 140,
+      "createdAt": "2026-11-10T13:20:51.713Z"
+    }
+  ],
+  "sessions": {},
+  "orders": [],
+  "topups": [],
+  "reviews": [
+    {
+      "id": "759f7296-a026-4716-b927-db69aea530b9",
+      "productId": "seed-1",
+      "author": "Minh Tr.",
+      "stars": 5,
+      "text": "Giao nhanh, đúng mô tả.",
+      "createdAt": "2026-11-10T13:20:51.713Z"
+    },
+    {
+      "id": "9419b273-20f4-4386-937d-bbd5179aaf34",
+      "productId": "seed-2",
+      "author": "Hà Ng.",
+      "stars": 5,
+      "text": "Nhân viên theo sát đơn.",
+      "createdAt": "2026-11-10T13:20:51.713Z"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MadStore — Tài khoản premium và nạp game</title>
+<meta name="description" content="Discord Nitro, Netflix, Spotify, ChatGPT và tiền trong game. Giao tự động 24/7, thanh toán bằng ví MadStore.">
+<meta name="theme-color" content="#f7f3ea">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/theme.css">
+<link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<header data-header></header>
+
+<main>
+  <section class="hero">
+    <div class="shell hero__grid">
+      <div class="hero__main">
+        <span class="pill" data-reveal><span class="dot"></span> Giao tự động 24/7</span>
+        <h1 class="hero__title" data-reveal>Tài khoản premium và nạp game, giao trong <em>3 phút</em></h1>
+        <p class="hero__lede" data-reveal>
+          Discord Nitro, Netflix, Spotify, ChatGPT và tiền trong game.
+          Trả bằng ví MadStore, hàng về ngay sau khi thanh toán.
+        </p>
+        <div class="hero__cta" data-reveal>
+          <a class="btn btn--primary btn--lg" href="/products">Xem sản phẩm</a>
+          <a class="btn btn--ghost btn--lg" href="/products?category=Game">Nạp game</a>
+        </div>
+        <div class="hero__meta" data-reveal>
+          <div><strong>24/7</strong> giao tự động</div>
+          <div><strong>3 phút</strong> nhận hàng</div>
+          <div><strong>1-1</strong> hỗ trợ trực tuyến</div>
+        </div>
+      </div>
+
+      <aside class="hero__aside" data-receipt aria-label="Đơn gần nhất"></aside>
+    </div>
+  </section>
+
+  <section class="section" id="flash">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Đang giảm giá</p>
+          <h2 class="section-head__title">Giá xuống, số lượng có hạn</h2>
+        </div>
+        <a class="section-head__link" href="/products">Tất cả sản phẩm <span data-icon="arrow"></span></a>
+      </div>
+      <div class="flash-grid" data-flash>
+        <div class="skeleton-card"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line" style="width:70%"></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line" style="width:70%"></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line" style="width:70%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="game">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Nạp game</p>
+          <h2 class="section-head__title">Nạp thẳng vào tài khoản game</h2>
+        </div>
+        <a class="section-head__link" href="/products?category=Game">Tất cả <span data-icon="arrow"></span></a>
+      </div>
+      <div class="game-grid" data-games></div>
+    </div>
+  </section>
+
+  <section class="section" id="premium">
+    <div class="shell">
+      <div class="section-head" data-reveal>
+        <div>
+          <p class="eyebrow">Tài khoản premium</p>
+          <h2 class="section-head__title">Chọn gói, thanh toán, nhận ngay</h2>
+        </div>
+        <a class="section-head__link" href="/products">Tất cả <span data-icon="arrow"></span></a>
+      </div>
+      <div class="product-grid" data-featured>
+        <div class="skeleton-card"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line" style="width:70%"></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line" style="width:70%"></div></div>
+        <div class="skeleton-card"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line" style="width:70%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight" id="vip">
+    <div class="shell">
+      <div class="vipstrip" data-reveal>
+        <span class="r">VIP</span>
+        <div>
+          <h3>Càng chơi càng rẻ, tới −10%</h3>
+          <p>Nạp ví, mua đều và lên hạng. Mỗi bậc VIP giảm thêm trên mọi đơn hàng.</p>
+        </div>
+        <a class="btn btn--ghost" href="/account">Xem hạng của tôi</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="shell">
+      <div class="feature-grid" data-reveal>
+        <article class="feature">
+          <span class="feature__icon" data-icon="bolt"></span>
+          <h3 class="feature__title">Giao tự động</h3>
+          <p class="feature__text">Đơn có sẵn xử lý ngay sau khi thanh toán, không phải chờ ai trả lời.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__icon" data-icon="shield"></span>
+          <h3 class="feature__title">Bảo hành rõ ràng</h3>
+          <p class="feature__text">Mỗi sản phẩm ghi thời hạn bảo hành. Hàng lỗi được đổi hoặc hoàn về ví.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__icon" data-icon="discord"></span>
+          <h3 class="feature__title">Hỗ trợ 1-1</h3>
+          <p class="feature__text">Có người thật trực chiến. Mở ticket là nhân viên xem đúng đơn của bạn.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__icon" data-icon="qr"></span>
+          <h3 class="feature__title">Ví MadStore</h3>
+          <p class="feature__text">Nạp bằng QR ngân hàng, tiền vào ví ngay. Thanh toán một chạm cho mọi đơn.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="support">
+    <div class="shell faq">
+      <div data-reveal>
+        <p class="eyebrow">Hỗ trợ</p>
+        <h2 class="section-head__title">Câu hỏi thường gặp</h2>
+        <p class="section-head__sub">Chưa thấy câu bạn cần? Mở hỗ trợ trực tuyến, đội ngũ trả lời ngay trong khung chat.</p>
+        <a class="btn btn--ghost" href="/products" style="margin-top:20px">Bắt đầu mua</a>
+      </div>
+      <div class="faq__list" data-faq data-reveal></div>
+    </div>
+  </section>
+</main>
+
+<footer data-footer></footer>
+
+<script src="/assets/js/core.js"></script>
+<script src="/assets/js/home.js"></script>
+</body>
+</html>
